@@ -1,6 +1,8 @@
 # AI-conference-papers
 The papers published in top-tier AI conferences in recent years.
 
+<br>
+
 ## Paper table
 | | AAAI | ICLR | CVPR | ICML | ICCV | ECCV | NIPS |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -8,12 +10,14 @@ The papers published in top-tier AI conferences in recent years.
 | 2020 | [:heavy_check_mark:](paperlist/paperlist_aaai2020.tsv) | [:heavy_check_mark:](paperlist/paperlist_iclr2020.tsv) | [:heavy_check_mark:](paperlist/paperlist_cvpr2020.tsv) | [:heavy_check_mark:](paperlist/paperlist_icml2020.tsv) | - | [:heavy_check_mark:](paperlist/paperlist_eccv2020.tsv) | [:heavy_check_mark:](paperlist/paperlist_nips2020.tsv) |
 | 2021 | [:heavy_check_mark:](paperlist/paperlist_aaai2021.tsv) | [:heavy_check_mark:](paperlist/paperlist_iclr2021.tsv) | [:heavy_check_mark:](paperlist/paperlist_cvpr2021.tsv) | [:heavy_check_mark:](paperlist/paperlist_icml2021.tsv) | TBA | - | TBA |
 
+<br>
+
 ## Search papers
-You can perform the search papers as following:
+You can perform the paper search like a following example:
 ```
 python search.py -conf nips\|aaai -year \>\=2020 \<2021 -title quantiz\|prunin
 ```
-The log of execution:
+The log of command execution:
 ```
 16 tsv files are listed...
 Finished to read all paper lists (19744 entries)...
@@ -23,7 +27,7 @@ Search conditions:
   - Title: quantiz&prunin
 The searched 2 papers are saved at result_20210829-050022.tsv!
 ```
-At the saved tsv:
+In the saved tsv file:
 ```
 	Year	Conf	Title	Link	Authors	Keywords
 0	2020	nips	Bayesian Bits: Unifying Quantization and Pruning	https://papers.nips.cc/paper/2020/hash/3f13cf4ddf6fc50c0d39a1d5aeb57dd8-Abstract.html	Mart van Baalen, Christos Louizos, Markus Nagel, Rana Ali Amjad, Ying Wang, Tijmen Blankevoort, Max Welling	-

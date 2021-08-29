@@ -96,8 +96,7 @@ if __name__ == '__main__':
         result = df
     else:
         cond = eval(' & '.join(conds))
-        result = df.loc[cond, :]
-        result = result.reset_index(drop=True)
+        result = df.loc[cond, :].reset_index(drop=True)
 
     # save the results
     result_name = f'result_{time.strftime("%Y%m%d-%H%M%S")}.tsv'
