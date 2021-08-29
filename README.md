@@ -9,7 +9,26 @@ The papers published in top-tier AI conferences in recent years.
 | 2021 | [:heavy_check_mark:](paperlist/paperlist_aaai2021.tsv) | [:heavy_check_mark:](paperlist/paperlist_iclr2021.tsv) | [:heavy_check_mark:](paperlist/paperlist_cvpr2021.tsv) | [:heavy_check_mark:](paperlist/paperlist_icml2021.tsv) | TBA | - | TBA |
 
 ## Search papers
-TBA
+You can perform the search papers as following:
+```
+python search.py -conf nips\|aaai -year \>\=2020 \<2021 -title quantiz\|prunin
+```
+The log of execution:
+```
+16 tsv files are listed...
+Finished to read all paper lists (19744 entries)...
+Search conditions:
+  - Conferences: nips|aaai
+  - Years: >=2020 <2021
+  - Title: quantiz&prunin
+The searched 2 papers are saved at result_20210829-050022.tsv!
+```
+At the saved tsv:
+```
+	Year	Conf	Title	Link	Authors	Keywords
+0	2020	nips	Bayesian Bits: Unifying Quantization and Pruning	https://papers.nips.cc/paper/2020/hash/3f13cf4ddf6fc50c0d39a1d5aeb57dd8-Abstract.html	Mart van Baalen, Christos Louizos, Markus Nagel, Rana Ali Amjad, Ying Wang, Tijmen Blankevoort, Max Welling	-
+1	2020	nips	Position-based Scaled Gradient for Model Quantization and Pruning	https://papers.nips.cc/paper/2020/hash/eb1e78328c46506b46a4ac4a1e378b91-Abstract.html	Jangho Kim, KiYoon Yoo, Nojun Kwak	-
+```
 
 <br>
 
