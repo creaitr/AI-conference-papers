@@ -13,7 +13,7 @@ The papers published in top-tier AI conferences in recent years.
 ## Search papers
 You can perform the paper search like a following example:
 ```
-python search.py -conf nips\|aaai -year \>\=2020 \<2021 -title quantiz\|prunin
+python search.py -conf nips\|aaai -year \>\=2020 \<2021 -title quantiz\&prunin
 ```
 The log of command execution:
 ```
