@@ -3,7 +3,7 @@ The papers published in top-tier AI conferences in recent years.
 
 <br>
 
-## Paper table
+## Conferences
 | | AAAI | ICLR | CVPR | ICML | ICCV | ECCV | NIPS |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 2019 | [:heavy_check_mark:](paperlist/paperlist_aaai2019.tsv) | [:heavy_check_mark:](paperlist/paperlist_iclr2019.tsv) | [:heavy_check_mark:](paperlist/paperlist_cvpr2019.tsv) | [:heavy_check_mark:](paperlist/paperlist_icml2019.tsv) | [:heavy_check_mark:](paperlist/paperlist_iccv2019.tsv) | - | [:heavy_check_mark:](paperlist/paperlist_nips2019.tsv) |
@@ -33,6 +33,12 @@ In the saved tsv file:
 0	2020	nips	Bayesian Bits: Unifying Quantization and Pruning	https://papers.nips.cc/paper/2020/hash/3f13cf4ddf6fc50c0d39a1d5aeb57dd8-Abstract.html	Mart van Baalen, Christos Louizos, Markus Nagel, Rana Ali Amjad, Ying Wang, Tijmen Blankevoort, Max Welling	-
 1	2020	nips	Position-based Scaled Gradient for Model Quantization and Pruning	https://papers.nips.cc/paper/2020/hash/eb1e78328c46506b46a4ac4a1e378b91-Abstract.html	Jangho Kim, KiYoon Yoo, Nojun Kwak	-
 ```
+
+<br>
+
+## To do list
+- [ ] convert tsv to html for github-pages
+- [ ] crawl abstract texts
 
 <br>
 
