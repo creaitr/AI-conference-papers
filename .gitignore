@@ -132,4 +132,11 @@ dmypy.json
 ## custom files
 result*.tsv
 
+## Test
 temp
+
+## Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
