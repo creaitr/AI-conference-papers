@@ -131,3 +131,5 @@ dmypy.json
 
 ## custom files
 result*.tsv
+
+temp
