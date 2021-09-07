@@ -36,6 +36,7 @@ In the saved tsv file:
 ## To do list
 - [X] write a github page.
 - [ ] crawl abstract texts.
+- [ ] fix the NIPS tsv files.
 
 
 ## References
