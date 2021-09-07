@@ -8,7 +8,7 @@ The papers published in top-tier AI conferences in recent years.
 | 2020 | [:heavy_check_mark:](paperlist/paperlist_aaai2020.tsv) | [:heavy_check_mark:](paperlist/paperlist_iclr2020.tsv) | [:heavy_check_mark:](paperlist/paperlist_cvpr2020.tsv) | [:heavy_check_mark:](paperlist/paperlist_icml2020.tsv) | - | [:heavy_check_mark:](paperlist/paperlist_eccv2020.tsv) | [:heavy_check_mark:](paperlist/paperlist_nips2020.tsv) |
 | 2021 | [:heavy_check_mark:](paperlist/paperlist_aaai2021.tsv) | [:heavy_check_mark:](paperlist/paperlist_iclr2021.tsv) | [:heavy_check_mark:](paperlist/paperlist_cvpr2021.tsv) | [:heavy_check_mark:](paperlist/paperlist_icml2021.tsv) | TBU | - | TBU |
 
-<br>
+You can also see the [github page](https://creaiter.github.io/AI-conference-papers/).
 
 ## Search papers
 You can perform the paper search like a following example:
@@ -32,13 +32,11 @@ In the saved tsv file:
 1	2020	nips	Position-based Scaled Gradient for Model Quantization and Pruning	https://papers.nips.cc/paper/2020/hash/eb1e78328c46506b46a4ac4a1e378b91-Abstract.html	Jangho Kim, KiYoon Yoo, Nojun Kwak	-
 ```
 
-<br>
 
 ## To do list
-- [ ] convert tsv to html for github-pages
-- [ ] crawl abstract texts
+- [X] write a github page.
+- [ ] crawl abstract texts.
 
-<br>
 
 ## References
 - [evanzd/ICLR2021-OpenReviewData](https://github.com/evanzd/ICLR2021-OpenReviewData)
