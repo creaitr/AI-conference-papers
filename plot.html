@@ -11,7 +11,7 @@ layout: default
     document.getElementById("file").innerHTML = params.get('plist');
 
     $.ajax({
-        url:"../paperlist/paperlist_" + params.get('plist') + ".tsv",
+        url:"paperlist/paperlist_" + params.get('plist') + ".tsv",
         dataType:"text",
         success:function(data)
         {
