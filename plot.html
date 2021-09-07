@@ -2,24 +2,29 @@
 layout: default
 ---
 
-<p id="file" style="text-transform: uppercase; font-weight: 800; font-size: 30px; padding-left: 50px;"></p>
+</main>
+<main id="content2" class="main-content" style="max-width: 1200px; transform: translateY(-60px);" role="main">
+
+<!-- <p id="file" style="text-transform: uppercase; font-weight: 700; font-size: 26px; text-align: center;"></p> -->
+<p id="file" class="conf-title"></p>
+
 
 <div id="employee_table"></div>
 
 <script>
     const params = new URLSearchParams(document.location.search);
-    document.getElementById("file").innerHTML = params.get('plist');
+    document.getElementById("file").innerHTML = params.get('conf') + ' - ' + params.get('year');
 
     $(document).ready(function() {
         $.ajax({
             type: "GET",
-            url:"paperlist/paperlist_" + params.get('plist') + ".tsv",
+            url:"paperlist/paperlist_" + params.get('conf') + params.get('year') + ".tsv",
             dataType:"text",
             success:function(data)
             {
                 var employee_data = data.split(/\r?\n|\r/);
-                var table_data = '<table>';
-                for(var count = 0; count<employee_data.length; count++)
+                var table_data = '<table class="employee_table">';
+                for(var count = 0; count<employee_data.length-1; count++)
                 {
                     var cell_data = employee_data[count].split("\t");
                     table_data += '<tr>';

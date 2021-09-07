@@ -411,16 +411,91 @@ a {
       padding-bottom: 6px;
     }
   }
+  .conf-title {
+    color: #009926;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
 
-  // .employee_table {
-  //   a {
+    @include large {
+      font-size: 30px;
+    }
+    @include medium {
+      font-size: 26px;
+    }
+    @include small {
+      font-size: 22px;
+    }
+  }
 
-  //   }
-  //   i {
+  .employee_table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    -webkit-overflow-scrolling: touch;
 
-  //   }
-  // }
+    @include large {
+      font-size: 1rem;
+    }
+    @include medium {
+      font-size: 0.9rem;
+    }
+    @include small {
+      font-size: 0.8rem;
+    }
+
+    th {
+      font-weight: bold;
+      
+      @include large {
+        font-size: 1.1rem;
+      }
+      @include medium {
+        font-size: 1rem;
+      }
+      @include small {
+        font-size: 0.9rem;
+      }
+    }
+
+    th,
+    td {
+      padding: 0.4rem 0.9rem;
+      border: 1px solid $table-border-color;
+    }
+
+    tr:nth-of-type(odd) { background-color: #fff; }
+    tr:nth-of-type(even) { background-color: #f6fbff; }
+    
+    a {
+      @include large {
+        font-size: 1rem;
+      }
+      @include medium {
+        font-size: 0.9rem;
+      }
+      @include small {
+        font-size: 0.8rem;
+      }
+    }
+    i {
+      @include large {
+        font-size: 0.85rem;
+      }
+      @include medium {
+        font-size: 0.78rem;
+      }
+      @include small {
+        font-size: 0.7rem;
+      }
+    }
+  }
 }
+
 
 .site-footer {
   padding-top: 2rem;
