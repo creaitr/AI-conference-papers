@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<p id="file" style="text-transform: uppercase; font-weight: 800; font-size: 30px; padding-left: 50px;"></p>
+
+<div id="employee_table"></div>
+
+<script>
+    const params = new URLSearchParams(document.location.search);
+    document.getElementById("file").innerHTML = params.get('plist');
+
+    $.ajax({
+        url:"../paperlist/paperlist_" + params.get('plist') + ".tsv",
+        dataType:"text",
+        success:function(data)
+        {
+            var employee_data = data.split(/\r?\n|\r/);
+            var table_data = '<table>';
+            for(var count = 0; count<employee_data.length; count++)
+            {
+                var cell_data = employee_data[count].split("\t");
+                table_data += '<tr>';
+                if(count === 0)
+                {
+                    table_data += '<th>No.</th>' + '<th>Papers</th>' + '<th>Check</th>';
+                }
+                else{
+                    table_data += '<td style="text-align: center;">'+cell_data[0]+'</td>';
+                    table_data += '<td>'+'<a href="'+cell_data[2]+'">'+cell_data[1]+'</a><br><i>'+cell_data[3]+'</i></td><td style="text-align: center;"><input type="checkbox"></td>';
+
+                }
+                table_data += '</tr>';
+            }
+            table_data += '</table>';
+            $('#employee_table').html(table_data);
+        }
+    });
+</script>
